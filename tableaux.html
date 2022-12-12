@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Tableaux</title>
+    <style>
+        table{
+            width: 80%;
+
+        }
+        table,th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Les tableaux</h1>
+    <table>
+        <!--Titre du tableau-->
+        <caption>Dépenses </caption>
+        <thead>
+            <tr>
+                <th>Achats</th>
+                <th>Lieu</th>
+                <th>Date</th>
+                <th>Avis</th>
+                <th>Cout euros</th>
+            </tr>
+        </thead>
+        <!--Corps du tableau-->
+        <tbody>
+            <tr>
+                <td>Coupe de cheveux</td> <!--1ère cellule-->
+                <td>Coiffeur</td>
+                <td>12/09</td>
+                <td>Bonne idée</td>
+                <td>30</td>
+            </tr> <!--Fin de ligne-->
+            <tr>
+                <td>Chaussures</td>
+                <td>Magasin de Chaussures</td>
+                <td>13/09</td>
+                <td>Gros regrets</td>
+                <td>65</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total</td>
+                <td>95</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!--Fusion des cellules
+        Fusion des colonnes :<td colspan="n">
+        Fusion des lignes : <td rowspan="n"-->
+</body>
+</html>

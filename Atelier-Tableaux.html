@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier Tableau</title>
+</head>
+<style>
+    table{
+        width: 50%;
+
+    }
+    table,th, td{
+        border: 1px solid black;
+        
+
+    }
+</style>
+<body>
+    <main>
+        <h1>Atelier Tableau</h1>
+    <table>
+    <caption>Atelier Tableau</caption>
+    <thead>
+        <tr>
+            <th colspan="3">L'entête occupe toute la largeur du tableau</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">Cette cellule occupe deux lignes</td>
+            <td>cellule</td>
+            <td>cellule</td>
+        </tr>
+        <tr>
+            <td>Je n'ai besoin de definir que</td>
+            <td>deux cellules sur cette ligne</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Pied de page</td>
+            <td colspan="2">Fusion de cellules</td>
+        </tr>
+    </tfoot>
+    </table>
+</main>
+</body>
+</html>
