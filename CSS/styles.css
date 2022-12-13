@@ -1,0 +1,73 @@
+:root{
+    --blue-color:#0000FF;
+}
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+#home-nav ul{
+    display: flex;
+    justify-content: end;
+}
+#home-nav ul li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+#home-nav a{
+    text-decoration: none;
+}
+#home-nav a:hover{
+    color:green;
+    text-decoration: underline;
+}
+#home-main-picture{
+    height:100vh;
+}
+header{
+    background-image: url(./images/lianejpg.jpg);
+    height: 100vh;
+}
+header h1{
+    line-height: 60vh;
+
+}
+#home-main ul li{
+    list-style-type: square;
+}
+#home-main a{
+    text-decoration: square;
+}
+
+.rouge{
+    color: red;
+    text-decoration: underline dotted;
+}
+.bleue{
+    color: var(--blue-color);
+}
+#div-1{
+    background-color: rgb(77, 77, 255, 0.9);
+    font-size: 2em;
+}
+#div-2:hover{
+    background-color: red;
+    font-size: 1.5em;
+}
+h1{
+    text-align: center;
+    color: blue;
+    text-decoration: underline dotted;
+    text-transform: capitalize;
+}
+#button-wrapper{
+    text-align: center;
+}
+.button{
+    background-color: blue;
+    color: white;
+    padding: 1em;
+    border-radius: 20px;
+}

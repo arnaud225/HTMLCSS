@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les médias</title>
+</head>
+<body>
+    <main>
+        <h1>Les médias</h1>
+        <h2>Les videos</h2>
+        <!--Plusieurs attributs 
+            Controls affiche les contrôles (lecture, pause)
+            poster affiche une image quand la video n'est pas chargée
+            width/height : largeur/hauteur
+            autoplay: lance la video automatiquement
+            muted: determine si la video se lance avec le son-->
+    </main>
+    <video src="/medias/Des Nuages.mp4"  controls width="400">Avez voud pensé à mettre votre navigateur à jour?</video>
+
+    <!--Possibilité de renseigner plusieurs formats vidéos pour s'assurer de la compatibilité des differents navigateurs-->
+    <h3>Plusieurs formats de video pour une meilleure compatibilité</h3>
+    <video controls width="400">
+        <source src="/medias/Des Nuages.mp4" type="video/mp4">
+        <source src="/medias/Des Nuages.mp4" type="video/ovg">
+    </video>
+    <h2>Les Fichiers audios</h2>
+    <audio src=""></audio>
+</body>
+</html>

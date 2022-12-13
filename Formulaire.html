@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Formulaires</title>
+</head>
+<body>
+    <main>
+        <h1>Mon Premier Formulaire</h1>
+        <form action="mailto: test@gmail.com" method="post">
+            <fieldset>
+                <legend>Etat Civil</legend>
+                <!--Champ input de type de text-->
+                <label for="prenom">Prenom : </label>
+                    <input type="text" name="prenom" id="prenom" required>
+                    <label for="nom">Nom : </label>
+                    <input type="text" name="nom" id="nom" required>
+            </fieldset>
+            <br><br>
+            <!--Champ input de type radio-->
+            <label for="">Type radio(avec un champ précoché)</label>
+            <input type="radio" name="genre" id="masculin" value="masculin" checked>
+            <label for="masculin">Masculin</label>
+            <input type="radio" name="genre" id="feminin" value="feminin">
+            <label for="feminin">Féminin</label><br>
+            <!--Champ input de type number-->
+            <label for="age">Votre Age : </label><br><br>
+            <input type="number" id="age" name="age" min="1" max="120" required><br>
+            <fieldset>
+                <legend>Connectez vous</legend>
+                <label for="mail">Identifiant</label>
+                <input type="email" name="mail" id="mail"><br>
+                <label for="password">Mot de Passe : </label>
+                <input type="text" name="password" id="password">
+            </fieldset>
+
+            <!--Liste déroulante-->
+            <label for="produits">Votre choix</label>
+            <select name="produits" id="produits">
+                <!--<option value="none">Selectionnez</option>-->
+                <optgroup label="Fruités">
+                <option value="fraise">Fraise</option>
+                <option value="frambroise">Frambroise</option>
+                <option value="frambroise-fraise">Frambroise-Fraise</option>
+            </optgroup>
+            <optgroup label="suppléments">
+                <option value="chantilly">Chantilly</option>
+                <option value="pepites-chocolat">Pepites-chocolat</option>
+            </optgroup>
+            </select>
+
+            <!--Input textarea-->
+            <label for="commentaires">Vos commentaires</label>
+            <textarea placeholder="vos commentaires" name="commentaires" id="commentaires" cols="30" rows="10">  
+            </textarea>
+
+            <br>
+            <label for="qte">Quantité</label>
+            <input type="number" name="qte" id="qte" min="10" max="500" step="10"><br>
+
+            <label for="livraison">Date de Livraison</label>
+            <input type="date" name="livraison" id="livraison">
+            <br>
+            <label for="color">Couleur de glacage : </label>
+            <input type="color" name="color" id="color">
+            <br><br>
+
+            <label for="garniture">Garniture</label>
+            <input type="checkbox" name="garniture" id="garniture" value="sauce-tomate">
+            <label for="sauce tomate">Sauce Tomate</label>
+            <input type="checkbox" name="garniture" id="saumon" value="saumon">
+            <label for="saumon">Saumon</label>
+
+
+            <br><button type="submit">Valider</button>
+        </form>
+    </main>
+</body>
+</html>
