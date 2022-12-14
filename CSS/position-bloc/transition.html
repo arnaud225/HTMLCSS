@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les transitions</title>
+    <style>
+        ul{
+            display: flex;
+            justify-content: end;
+        }
+        ul li{
+            list-style-type: none;
+            padding: 1em;
+        }
+        ul a {
+            text-decoration: none;
+            font-size: 30px;
+        }
+        a:hover{
+           animation-name:transition1;
+           animation-duration: 5s;
+        }
+
+        @keyframes transition1{
+            from{
+                color:aqua;
+            }
+            50%{
+                font-weight: 900;
+                font-size: 60px;
+            }
+            to{
+                color:green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Lien 1</a></li>
+                <li><a href="#">Lien 2</a></li>
+                <li><a href="#">Lien 3</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

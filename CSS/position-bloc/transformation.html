@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            height: 100px;
+            width: 100px;
+            line-height: 100px;
+            text-align: center;
+            border:solid 5px green;
+            background-color: blue;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        section:hover{
+             border-radius: 50%;
+             background-color: brown;
+            transition-property: all;
+            transition-duration: 5s;
+            transform: translateX(1000px);
+        }
+
+        #s1{
+            transition-timing-function: linear;
+        }
+        #s2{
+            transition-timing-function: ease;
+        }
+        #s3{
+            transition-timing-function: ease-in;
+        }
+        #s4{
+            transition-timing-function: ease-in-out;
+        }
+        #s5{
+            transition-timing-function: ease-out;
+        }
+        #s6{
+            transition-timing-function:cubic-bezier(.83,-0.06,.5,1.43);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="s1"><p>Linear</p></section>
+        <section id="s2"><p>ease</p></section>
+        <section id="s3"><p>ease-in</p></section>
+        <section id="s4"><p>ease-in-out</p></section>
+        <section id="s5"><p>ease-out</p></section>
+        <section id="s6"><p>cubic-bezier</p></section>
+    </main>
+</body>
+</html>
